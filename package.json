@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "ModuleRun": "node moduleRunIndex.js",
-    "test": "yarn cypress run"
+    "test": "yarn cypress run",
+    "cy:verify": "yarn cypress verify"
   },
   "author": "",
   "license": "ISC",
