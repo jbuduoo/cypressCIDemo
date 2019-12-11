@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "ModuleRun": "node moduleRunIndex.js"
+    "ModuleRun": "node moduleRunIndex.js",
+    "test": "yarn cypress run"
   },
   "author": "",
   "license": "ISC",
