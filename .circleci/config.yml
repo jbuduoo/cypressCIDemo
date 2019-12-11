@@ -18,7 +18,7 @@ jobs:
       # - run:
       #     name: Install Dependencies
       #     command: npm ci
-
+      -run: yarn install
       # run verify and then save cache.
       # this ensures that the Cypress verified status is cached too
       - run: yarn cy:verify
