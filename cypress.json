@@ -1,5 +1,5 @@
 {
-    "targetEnv": "staging",
+    "targetEnv": "prod",
     "baseUrl": "http://www.helloqa.com",
     "env": {
         "staging": {
