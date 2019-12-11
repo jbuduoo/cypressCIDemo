@@ -1,6 +1,7 @@
 defaults: &defaults
   working_directory: ~/repo
   docker:
+    - image: circleci/node:10
     - image: cypress/base:10
 
 version: 2
@@ -20,7 +21,7 @@ jobs:
 
       # run verify and then save cache.
       # this ensures that the Cypress verified status is cached too
-      - run: npm run cy:verify
+      - run: yarn cy:verify
       # save new cache folder if needed
       - save_cache:
           key: cache-{{ .Branch }}-{{ checksum "package.json" }}
