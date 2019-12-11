@@ -44,6 +44,7 @@ jobs:
       - attach_workspace:
           at: ~/
       - run: yarn test
+      - run: echo "A first hello"
 
 workflows:
   version: 2
