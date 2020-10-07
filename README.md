@@ -32,3 +32,11 @@ jobs:
 
 參考資料:
 此篇文件Workflow 模版講的非常好，如下:https://sanonz.github.io/2020/deploy-a-hexo-blog-from-github-actions/
+
+其他:
+  - run: npm install -g yarn       #安裝yarn
+  - run: yarn --version            #檢查yarn版本
+	- run: npm install --save-dev start-server-and-test   #安裝npm及執行cypress相關動作。
+
+
+
