@@ -1,4 +1,4 @@
-name: Node.js CI
+name:cypress 測試
 
 on: [push]
 
