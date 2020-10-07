@@ -12,3 +12,5 @@ jobs:
     - uses: actions/setup-node@v1
     - run: npm install
     - run: yarn cy:run
+    - run: npm install -g yarn
+    - run: yarn --version
