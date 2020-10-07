@@ -10,4 +10,12 @@ describe('第一个用例', () => {
     it('[smoke]测试 Module API', () => {
       expect(2).to.equal(1)
     })
+
+    it('[smoke]测试 Module API', () => {
+      expect(2).to.equal(1)
+    })
+
+    it('[smoke]测试 Module API', () => {
+      expect(2).to.equal(1)
+    })
   })
