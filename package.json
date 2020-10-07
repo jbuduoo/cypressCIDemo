@@ -4,8 +4,11 @@
   "main": "index.js",
   "scripts": {
     "ModuleRun": "node moduleRunIndex.js",
-    "test": "yarn cypress run --reporter junit --reporter-options 'mochaFile=junit-results/my-test-output.xml'",
-    "cy:verify": "yarn cypress verify"
+    "cy:verify": "yarn cypress verify",
+    "cy:run": "yarn cypress run",
+    "debug": "yarn cypres open",
+    "start": "node server.js",
+    "test": "START_SERVER_AND_TEST_INSECURE=1 start-server-and-text start https-get://localhost:3002 cy:run"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +21,7 @@
     "mocha": "^5.2.0",
     "mochawesome": "^4.1.0",
     "mochawesome-merge": "^2.1.0",
-    "mochawesome-report-generator": "^4.0.1"
+    "mochawesome-report-generator": "^4.0.1",
+    "start-server-and-test": "^1.11.5"
   }
 }
