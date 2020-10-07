@@ -1,6 +1,6 @@
 name:cypress 測試
 
-on: [push]
+on:[push]
 
 jobs:
   build:
