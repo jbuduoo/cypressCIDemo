@@ -10,6 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
+    - run: npm install --save-dev start-server-and-test
     - run: npm install -g yarn
     - run: yarn --version
     - run: yarn cy:run
